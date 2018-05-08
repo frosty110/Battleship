@@ -54,7 +54,7 @@ class BattleShipGameTest {
 
         assertSame(battle.userGuesses("A1"), GuessResults.HIT);
         assertFalse(battle.hasWinner());
-        assertSame(battle.userGuesses("A1"), GuessResults.MISS);
+        assertSame(battle.userGuesses("A1"), GuessResults.INVALID);
         assertFalse(battle.hasWinner());
 
     }
